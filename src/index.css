@@ -1,0 +1,124 @@
+/* Credits:  https://www.youtube.com/watch?v=Foieq2jTajE */
+
+/* Custom Properties */
+:root {
+
+    /* Colors */
+    --primary-color     : #181818;
+    --secondary-color   : #f0f0f0;
+
+    /* Tipography */
+    --primary-font      : Helvetica, Arial, sans-serif;
+    --secondary-font    : Verdana,
+}
+
+    /* Dark Mode */
+/* @media ( prefers-color-scheme: dark ) {
+    :root {
+        --primary-color     : #f0f0f0;
+        --secondary-color   : #181818;
+    }
+} */
+
+    /* High Contrast */
+@media ( prefers-contrast: high ) {
+    :root {
+        --primary-color     : black;
+        --secondary-color   : white;
+    }
+}
+
+    /* Reduce Motion */
+@media ( prefers-reduced-motion: reduce ) {
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+    /* Reset margin and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+    /* Keep problems with img */
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;              /* opcional */
+    object-position: center center; /* opcional */
+}
+
+    /* Reset links */
+a {
+    display: block
+}
+
+    /* Except */
+p a {
+    display: inline;
+}
+
+    /* Keep out points */
+li {
+    list-style-type: none;
+}
+
+    /* Config */
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit
+}
+
+blockquote:before, blockquote::after, quotes:before, q:after {
+    content: '';
+    content: none;
+}
+
+::selection {
+    background-color: var( --primary-color );
+    color: var( --secondary-color )
+}
+
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit
+    /* opcional appearance: none */
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var( --primary-font );
+    color: var( --primary-color );
+    background-color: var( --secondary-color );
+    /* line-height: 1.4em; opcional */
+    hyphens: auto;
+}
