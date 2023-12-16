@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en GifItem El componente debe ser igual a la snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="One Punch Man GIF"
+      src="https://media0.giphy.com/media/VXJWhaO7afRe/giphy.gif?cid=9179ae8etwtm652xi57dbevkyr2vd6j4xka0mx0zeghl7fo1&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    />
+    <p>
+      One Punch Man GIF
+    </p>
+  </div>
+</div>
+`;
